@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Warbird 3D</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <div class="panel">
+        <span>HEALTH</span>
+        <strong id="health">100</strong>
+      </div>
+      <div class="panel">
+        <span>SCORE</span>
+        <strong id="score">0</strong>
+      </div>
+      <div class="panel">
+        <span>BEST</span>
+        <strong id="best">0</strong>
+      </div>
+    </div>
+
+    <div id="startOverlay" class="overlay visible">
+      <div class="card">
+        <h1>Sky Warbird 3D</h1>
+        <p>Use WASD / Arrow keys to fly. Press Space to fire. Hold Shift to boost.</p>
+        <p>Gamepad supported: left stick to move, trigger to fire.</p>
+        <button id="startButton">Start Mission</button>
+      </div>
+    </div>
+
+    <div id="gameOverOverlay" class="overlay hidden">
+      <div class="card">
+        <h2>Mission Failed</h2>
+        <p id="finalScore">Score: 0</p>
+        <button id="restartButton">Fly Again</button>
+      </div>
+    </div>
+
+    <script type="module" src="./game.js"></script>
+  </body>
+</html>
